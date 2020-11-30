@@ -4,8 +4,5 @@ export default {
   },
   ADDRESS(state) {
     return state.address
-  },
-  COORDS_POLYGON(state) {
-    return state.coordsPolygon
   }
 }

@@ -6,7 +6,7 @@ export default {
       .then(response => {
         const address = response.data.response.GeoObjectCollection.featureMember[0]
           .GeoObject.metaDataProperty.GeocoderMetaData.text
-        console.log(address)
+        console.log(`Адрес метки: ${address}`)
         commit('SET_ADDRESS', address)
         return address
       })
